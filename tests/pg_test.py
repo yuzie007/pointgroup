@@ -22,7 +22,7 @@ def make_test_function(coordinates, symbols, label):
     return test
 
 
-with open('sym_molecules.xyz') as f:
+with open(os.path.join(dir_path, 'sym_molecules.xyz')) as f:
     xyz_files = f.readlines()
 
 i = 0
